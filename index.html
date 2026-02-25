@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio of Joyonto Biswas - Trader, Learner, and Web Developer from West Bengal.">
     <title>Joyonto Biswas - Personal Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -11,12 +12,17 @@
 
     <nav>
         <div class="logo">JOYONTO.</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#writings">Writings</a></li>
-            <li><a href="#gallery">Family</a></li>
-            <li><a href="#contact">Contact</a></li>
+        
+        <div class="menu-icon" id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home" onclick="closeMenu()">Home</a></li>
+            <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+            <li><a href="#writings" onclick="closeMenu()">Writings</a></li>
+            <li><a href="#gallery" onclick="closeMenu()">Family</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
         </ul>
     </nav>
 
@@ -30,9 +36,9 @@
             <div class="find-me">
                 <p>CONNECT WITH ME</p>
                 <div class="icon-group">
-                    <a href="#" class="box-btn"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="box-btn"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="box-btn"><i class="fab fa-github"></i></a>
+                    <a href="https://facebook.com" target="_blank" class="box-btn"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="box-btn"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/myselfjbiswas" target="_blank" class="box-btn"><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </div>
@@ -54,25 +60,22 @@
             <div class="card">
                 <i class="fas fa-chart-line icon"></i>
                 <h3>Stock Trading</h3>
-                <p>Analyzing market trends, financial charts, and psychology of trading. Passionate about understanding the economy.</p>
+                <p>Analyzing market trends, financial charts, and psychology of trading.</p>
             </div>
-
             <div class="card">
                 <i class="fas fa-file-word icon"></i>
                 <h3>MS Office Expert</h3>
-                <p>Professional proficiency in MS Word, Excel, and PowerPoint for data management and presentations.</p>
+                <p>Professional proficiency in MS Word, Excel, and PowerPoint.</p>
             </div>
-
             <div class="card">
                 <i class="fas fa-pen-nib icon"></i>
                 <h3>Photoshop & Design</h3>
-                <p>Creating visual content and editing photos using Adobe Photoshop. I have a keen eye for aesthetics.</p>
+                <p>Creating visual content and editing photos using Adobe Photoshop.</p>
             </div>
-
             <div class="card">
                 <i class="fas fa-code icon"></i>
                 <h3>Basic Coding</h3>
-                <p>Building websites with HTML, CSS and learning new technologies to establish my digital presence.</p>
+                <p>Building websites with HTML, CSS and learning new technologies.</p>
             </div>
         </div>
     </section>
@@ -82,26 +85,23 @@
             <span class="subtitle">MY BLOG</span>
             <h2>Latest Writings</h2>
         </div>
-
         <div class="card-container">
             <div class="card">
                 <i class="fas fa-book-open icon"></i>
                 <h3>The Secret Translation</h3>
-                <p>My translation of Rhonda Byrne's 'The Secret'. Exploring the Law of Attraction in Bengali.</p>
+                <p>My translation of Rhonda Byrne's 'The Secret'. Exploring the Law of Attraction.</p>
                 <a href="#" class="read-more">Read Now <i class="fas fa-arrow-right"></i></a>
             </div>
-
             <div class="card">
                 <i class="fas fa-spell-check icon"></i>
                 <h3>English Grammar</h3>
-                <p>Notes on English Grammar rules, focusing on Tenses and Prepositions for easy learning.</p>
+                <p>Notes on English Grammar rules, focusing on Tenses and Prepositions.</p>
                 <a href="#" class="read-more">Start Learning <i class="fas fa-arrow-right"></i></a>
             </div>
-
             <div class="card">
                 <i class="fas fa-brain icon"></i>
                 <h3>Self Improvement</h3>
-                <p>Psychology and self-growth articles to help build a strong and positive mindset.</p>
+                <p>Psychology and self-growth articles for a positive mindset.</p>
                 <a href="#" class="read-more">Read Articles <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
@@ -124,6 +124,8 @@
         <p>© 2026 Joyonto Biswas. All rights reserved.</p>
         <p>Designed with ❤️ in West Bengal</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
